@@ -1,0 +1,26 @@
+.cocktail_card {
+  height: 300px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  align-items: center;
+  margin-bottom: 20px;
+  transition: all .2s ease-in-out;
+  & h5 {
+    color: #212529c4;
+  } & p {
+    display: inline-block;
+    background-color: $red;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+  }
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.cocktail-card-color-square {
+  padding: 100px 0;
+  background-color: $red;
+}

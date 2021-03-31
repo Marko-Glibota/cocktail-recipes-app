@@ -1,7 +1,18 @@
 <h1>Cocktails (<%= @cocktails.count  %>)</h1>
 
-<% @cocktails.each do |cocktail| %>
-<ul>
-  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-</ul>
-<% end %>
+<div class="row">
+  <% @cocktails.each do |cocktail| %>
+    <div class="col-4">
+      <%= link_to cocktail_path(cocktail) do %>
+        <div class="cocktail_card">
+          <div class="cocktail-card-color-square">
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <h5 class="mt-2"><%= cocktail.name %></h5>
+            <p clas="mt-2">See recipe</p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
