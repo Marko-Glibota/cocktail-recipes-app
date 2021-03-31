@@ -1,0 +1,21 @@
+.button-red {
+  background-color: $red;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px 25px;
+  border: none;
+}
+
+.button-white {
+  background-color: #fff;
+  color: $pink !important;
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px 25px;
+  border: none;
+  &:hover {
+    text-decoration: none !important;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+}
