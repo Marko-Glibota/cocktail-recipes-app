@@ -2,6 +2,6 @@
 
 <% @cocktails.each do |cocktail| %>
 <ul>
-  <li><%= cocktail.name %></li>
+  <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
 </ul>
 <% end %>
