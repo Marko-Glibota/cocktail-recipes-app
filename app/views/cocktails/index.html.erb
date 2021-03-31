@@ -5,8 +5,11 @@
     <div class="col-4">
       <%= link_to cocktail_path(cocktail) do %>
         <div class="cocktail_card">
-          <div class="cocktail-card-color-square">
-          </div>
+          <% if cocktail.photo.attached? %>
+          <%= cl_image_tag cocktail.photo.key, height: 200, crop: :fill %>
+          <% else %>
+            <div class="cocktail-card-color-square"></div>
+          <% end %>
           <div class="d-flex flex-column align-items-center">
             <h5 class="mt-2"><%= cocktail.name %></h5>
             <p clas="mt-2">See recipe</p>
