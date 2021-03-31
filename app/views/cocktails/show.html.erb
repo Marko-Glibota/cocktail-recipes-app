@@ -6,3 +6,6 @@
     <li><%= dose.ingredient.name %> | <%= dose.description %></li>
   <% end %>
 </ul>
+
+<h4>Add an ingredient !</h4>
+<%= render "./doses/dose_form", cocktail: @cocktail, dose: @dose %>
