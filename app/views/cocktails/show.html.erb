@@ -3,7 +3,11 @@
   <%= link_to edit_cocktail_path(@cocktail) do %>
     <i class="fas fa-pencil-alt mr-3"></i>
   <% end %>
-  <i class="fas fa-trash-alt"></i>
+  <%= link_to cocktail_path(@cocktail),
+            method: :delete,
+            data: { confirm: "Are you sure?" } do %>
+    <i class="fas fa-trash-alt"></i>
+  <% end %>
 </div>
 
 <div class="row">
