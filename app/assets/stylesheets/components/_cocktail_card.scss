@@ -24,3 +24,15 @@
   padding: 120px 0;
   background-color: $red;
 }
+
+.cocktail-img {
+  width: 350px;
+  height: 240px;
+}
+
+@media(max-width: 768px) {
+  .cocktail-img {
+    width: 510px;
+    height: 240px;
+  }
+}
