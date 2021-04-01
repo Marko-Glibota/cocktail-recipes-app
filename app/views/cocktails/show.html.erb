@@ -23,7 +23,11 @@
     <% if !@cocktail.doses.empty? %>
       <ul>
         <% @cocktail.doses.each do |dose| %>
-          <li><%= dose.ingredient.name %> | <%= dose.description %></li>
+          <li><%= dose.ingredient.name %> | <%= dose.description %>
+            <%= link_to cocktail_dose_path(@cocktail, dose),
+            method: :delete,
+            data: { confirm: "Are you sure?" } do %>
+            <i class="fas fa-trash-alt ml-3"></i><% end %></li>
         <% end %>
       </ul>
     <% else %>
