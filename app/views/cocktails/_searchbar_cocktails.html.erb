@@ -1,0 +1,7 @@
+<%= form_tag cocktails_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    placeholder: "Search a cocktail...", class: 'test'
+  %>
+  <%= submit_tag "Find", class: "button-red" %>
+<% end %>
