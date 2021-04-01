@@ -1,4 +1,10 @@
-<h1><%= @cocktail.name %></h1>
+<div class="d-flex align-items-center">
+  <h1 class="mr-3"><%= @cocktail.name %></h1>
+  <%= link_to edit_cocktail_path(@cocktail) do %>
+    <i class="fas fa-pencil-alt mr-3"></i>
+  <% end %>
+  <i class="fas fa-trash-alt"></i>
+</div>
 
 <div class="row">
   <div class="col-sm-12 col-md-6 col-lg-4">
@@ -25,7 +31,4 @@
     <%= render "./doses/dose_form", cocktail: @cocktail, dose: @dose %>
   </div>
 </div>
-
-
-
 
