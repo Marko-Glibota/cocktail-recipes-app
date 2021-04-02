@@ -20,23 +20,16 @@
   }
 }
 
+.cocktail_card > img {
+  height: 240px;
+  width: 100%;
+}
+
 .cocktail-card-color-square {
   padding: 120px 0;
   background-color: $red;
 }
 
-.cocktail-img {
-  width: 350px;
-  height: 240px;
-}
-
 .decoration-none a {
   text-decoration: none;
-}
-
-@media(max-width: 768px) {
-  .cocktail-img {
-    width: 510px;
-    height: 240px;
-  }
 }

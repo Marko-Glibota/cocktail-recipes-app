@@ -10,9 +10,7 @@
       <%= link_to cocktail_path(cocktail) do %>
         <div class="cocktail_card">
           <% if cocktail.photo.attached? %>
-          <div class="cocktail-card-photo d-flex align-items-start">
-            <%= cl_image_tag cocktail.photo.key, crop: :fit, class: 'cocktail-img' %>
-          </div>
+            <%= cl_image_tag cocktail.photo.key, crop: :fit %>
           <% else %>
             <div class="cocktail-card-color-square"></div>
           <% end %>
