@@ -6,7 +6,7 @@
 
 <div class="row">
   <% @cocktails.each do |cocktail| %>
-    <div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="col-sm-12 col-md-6 col-lg-4 decoration-none">
       <%= link_to cocktail_path(cocktail) do %>
         <div class="cocktail_card">
           <% if cocktail.photo.attached? %>
