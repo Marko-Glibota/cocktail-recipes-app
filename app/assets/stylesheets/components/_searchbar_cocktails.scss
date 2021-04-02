@@ -1,4 +1,4 @@
-.test {
+.search-input {
   padding: 10px;
   width: 300px;
   border-radius: 50px;
@@ -6,3 +6,8 @@
   outline:none;
 }
 
+@media(max-width: 414px) {
+  .search-input {
+    width: 200px;
+  }
+}
