@@ -15,3 +15,9 @@ nav {
     text-decoration: underline;
   }
 }
+
+@media(max-width: 414px) {
+  .home {
+    display: none;
+  }
+}
